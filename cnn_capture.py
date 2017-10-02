@@ -96,7 +96,8 @@ if __name__=="__main__":
 
                 idx = 0
                 for c in rcvmsg:
-                    print("received=%d (%s)" % (ord(c),obj_label[idx]))
+                    if idx < 3:
+                        print("received=%d (%s)" % (ord(c),obj_label[idx]))
                     idx += 1
 
             if key == 45: #[-] key
